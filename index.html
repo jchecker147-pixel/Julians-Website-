@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julian Eberwein – Webdesigner & Entwickler</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --surface:#111827;
+      --text:#e6eef8;
+      --muted:#9fb0c8;
+      --accent:#2dd4bf;
+      --radius:14px;
+      font-family: "Inter", sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+    header{position:sticky;top:0;padding:1rem 2rem;background:rgba(15,23,36,0.7);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;z-index:10;}
+    header nav a{margin-left:1rem;text-decoration:none;color:var(--muted);font-weight:600;}
+    header nav a:hover{color:var(--text);}
+    .hero{padding:6rem 2rem;text-align:center;max-width:700px;margin:auto;}
+    .hero h1{font-size:2.6rem;margin-bottom:0.8rem;}
+    .hero p{color:var(--muted);margin-bottom:2rem;}
+    .btn{padding:0.8rem 1.2rem;border-radius:var(--radius);font-weight:600;text-decoration:none;border:1px solid transparent;display:inline-block;}
+    .btn-primary{background:var(--accent);color:#043a38;}
+    .btn-outline{border:1px solid var(--muted);color:var(--text);margin-left:0.5rem;}
+    section{padding:4rem 2rem;max-width:1100px;margin:auto;}
+    h2{text-align:center;margin-bottom:2rem;font-size:2rem;}
+    .grid{display:grid;gap:1.5rem;}
+    .grid-3{grid-template-columns:repeat(3,1fr);}
+    .card{padding:1.5rem;background:var(--surface);border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);}
+    .portfolio img{width:100%;height:180px;object-fit:cover;border-radius:var(--radius);}
+    form{display:flex;flex-direction:column;gap:1rem;max-width:500px;}
+    input,textarea{padding:0.8rem;border-radius:var(--radius);background:#1f2937;border:1px solid #374151;color:var(--text);}
+    footer{text-align:center;padding:2rem;color:var(--muted);}
+    @media(max-width:900px){.grid-3{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <strong style="font-size:1.3rem;">Julian Eberwein</strong>
+  <nav>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Webdesign & Entwicklung für moderne Marken</h1>
+  <p>Ich erstelle klare, schnelle und professionelle Webseiten für Unternehmen, Selbstständige und Kreative.</p>
+  <a href="#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
+  <a href="#projekte" class="btn btn-outline">Projekte ansehen</a>
+</section>
+
+<section id="leistungen">
+  <h2>Leistungen</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Webdesign</h3>
+      <p>Moderne Designs mit Fokus auf Klarheit, Benutzerfreundfreundlichkeit und Wirkung.</p>
+    </div>
+    <div class="card">
+      <h3>Webentwicklung</h3>
+      <p>Sauberer Code, hohe Performance und 100% responsive für alle Geräte.</p>
+    </div>
+    <div class="card">
+      <h3>Branding</h3>
+      <p>Farbschemata, Typografie und visuelle Identitäten, die herausstechen.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projekte">
+  <h2>Projekte</h2>
+  <div class="grid grid-3 portfolio">
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=1" alt="">
+      <h3>Portfolio Website</h3>
+      <p>Moderner One-Pager für Freelancer.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=2" alt="">
+      <h3>Firmenhomepage</h3>
+      <p>Minimalistisches Corporate Design für ein kleines Unternehmen.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=3" alt="">
+      <h3>Landingpage</h3>
+      <p>Konversionsstarke Landingpage für ein Produkt.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <form action="mailto:Jchecker147@gmail.com" method="post" enctype="text/plain">
+    <input type="text" placeholder="Dein Name" required>
+    <input type="email" placeholder="Deine E-Mail" required>
+    <textarea placeholder="Deine Nachricht" rows="5" required></textarea>
+    <button class="btn btn-primary" type="submit">Nachricht senden</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Julian Eberwein – Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>
